@@ -1,0 +1,29 @@
+"use strict";
+
+fetch("./project.json")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+    });
+[
+  {"fullname": "Ben Smith", 
+   "age": 32, 
+   "height": "180cm", 
+   "position": "Senior Web Developer", 
+   "location": "London"
+  },
+  {"fullname": "Jane Doe",
+   "age": 35,
+   "height": "170cm",
+   "position": "Project Lead",
+   "location": "London"
+  },
+  {"fullname": "Rob Smith",
+   "age": 26,
+   "height": "185cm",
+   "position": "Web Developer",
+   "location": "New York"
+  }
+  ]
