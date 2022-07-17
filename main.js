@@ -9,8 +9,8 @@ resolve(response.json());
 } else {
   reject({
     error: 500});
-   });
-  }
+   };
+  });
  });
 };
                      
