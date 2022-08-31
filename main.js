@@ -1,9 +1,11 @@
 let count = 0;
-let clickBtn = document.getElementById("clickBtn");
-let totalClicks = document.getElementById("totalClicks");
+const clickBtn = document.getElementById("clickBtn");
+const totalClicks = document.getElementById("totalClicks");
 clickBtn.onclick = function () {
-    count++;
-  };
+  count++;
+  totalClicks.innerHTML = count;
+};
 resetBtn.onclick = function () {
-    count = 0;
-  };
+  count = 0;
+  totalClicks.innerHTML = count;
+};
